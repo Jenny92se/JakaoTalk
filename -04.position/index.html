@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA=Compatible" content="ie=edge">
+    <meta name="description" content="welcome to my kakao clone">
+    <!-- meta 데이터는 서치 엔진에서 검색시에 웹사이트 하단에 나오는 설명문.
+    특정 meta name 태그는 특정 플랫폼(네이버 구글 등)에만 쓰이는 것도 있음.. meta는 굉장히 많음-->
+    <title> Mixin' Css and HTML </title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            background-color: green;
+            height: 100%;
+        }
+
+        body {
+            height: 400%;
+            background-color: red;
+        }
+
+        /*
+        position fixed 
+
+        #boxOne {
+            background-color: peru;
+            height: 300px;
+            width: 300px;
+            position: static;
+        }
+
+        #boxTwo {
+            background-color: yellow;
+            height: 300px;
+            width: 300px;
+            position: fixed;
+            bottom: 10px;
+            left: 500px;
+        }
+        */
+
+        .abs-box {
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+
+        .abs-child {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="abs-box">
+        <div class="abs-child"> </div>
+    </div>
+    <!-- position fixed
+    <h1>Title</h1>
+    <p> blarblar blarblar blarblar blarblar blarblarblarblar blarblar</p>
+    <a href="./contact-me.html">Fake link</a>
+
+    <div id="boxOne">
+        <div class="box-child"></div>
+    </div>
+
+    <div id="boxTwo">
+        <div class="box-child"></div>
+    </div>
+    -->
+</body>
+
+</html>
